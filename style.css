@@ -1,0 +1,147 @@
+html {
+  scroll-behavior: smooth;
+}
+hr{
+  border-color: white;
+}
+.link-nav{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+body {
+    background-image: url('https://images.hdqwalls.com/wallpapers/playstation-background-image-yu.jpg');
+    background-image: url('https://cdn.vox-cdn.com/thumbor/rfvqzM4bkPZ_Jfe6sXIwIMI3cFs=/0x0:2400x1600/1200x800/filters:focal(0x1216:384x1600)/cdn.vox-cdn.com/uploads/chorus_image/image/55015003/playstation_logo_buttons_photo_2400.0.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  /* The navigation bar */
+.navbar {
+  display: flex;
+  overflow: hidden;
+  background-color: #c1bfc65c; 
+  position: sticky;
+  top: 0; 
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+ /* display: block; */
+  color: rgb(28, 4, 53);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  color: white;
+}
+
+#sony-background{
+  width: 95vw;
+  height: 40vw;
+}
+
+.section-type{
+  background-color: rgba(171, 156, 156, 0.311);
+  border-color: blue;
+  border-radius: 1vw;
+}
+
+.product{
+width: 30vw;
+height: 20vw;
+border-radius: 2%;
+margin: 0.5vw;
+transition: transform .2s;
+}
+
+#location{
+  display: flex;
+  justify-content: center;
+}
+#location-img{
+  height: 10vw;
+  width: 10vw;
+}
+
+
+.title-type{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgb(36, 0, 71);;
+  font-size: 1.8vw;
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  animation-duration: 15s;
+  border-radius: 10%;
+  animation-iteration-count: infinite;
+}
+
+#animation-sale{
+  margin-top: 2.5vw;
+  height: 15vw;
+  width: 95vw;
+  animation: sales;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+   
+}
+
+
+#title-consoles{
+  animation-name: console;
+}
+#title-games{
+  animation-name: games;
+  color: white;
+}
+#title-acsesories{
+  animation-name: acsesories;
+}
+.product:hover{
+  transform: scale(1.2);
+}
+
+
+@keyframes games {
+  0%   {background-image: url(/images/fifa23.jpeg);; background-size: cover; left: 10vw; top:0vw;}
+  25%  {background-image: url(./images/gta5.jpg); background-size: cover; left:80vw;}
+  75%  {background-image: url(./images/nba23.jpg); left:80vw;}
+  100% {background-image: url(/images/fifa23.jpeg);; background-size: cover; left: 10vw; top:0vw;}
+}
+@keyframes console {
+  0%   {background-image: url(./images/ps5.png); background-size: cover; left: 10vw; top:0px;}
+  25%  {background-image: url(./images/xbox-x.jpg); background-size: cover; left:80vw;}
+  75%  {background-image: url(./images/nintendo-switch.jpg); left:80vw;}
+  100% {background-image: url(./images/ps5.png); background-size: cover; left: 10vw; top:0px;}
+}
+@keyframes acsesories {
+  0%   {background-image: url(./images/controller-ps5.webp); background-size: cover; left: 10vw; top:0px;}
+  25%  {background-image: url(./images/headphone.jpg); background-size: cover; left:80vw;}
+  75%  {background-image: url(./images/PS4-HD-CAMERA.jpg); left:80vw;}
+  100% {background-image: url(./images/controller-ps5.webp); background-size: cover; left: 10vw; top:0px;}
+}
+@keyframes sales {
+    0%  {background-image: url(/images/visit-us.png); background-size: cover;}
+    25%  {background-image: url(/images/soldout-sony4.png); background-size: cover;}
+    50%   {background-image: url(/images/wii-free.png); background-size: cover;}
+    100%  {background-image: url(/images/visit-us.png); background-size: cover;}
+}
+
+@media screen and (max-width: 768px) {
+  #amit{
+      display: none;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+}
