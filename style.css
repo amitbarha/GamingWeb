@@ -102,8 +102,8 @@ transition: transform .2s;
   animation-name: games;
   color: white;
 }
-#title-acsesories{
-  animation-name: acsesories;
+#title-accessories{
+  animation-name: accessories;
 }
 .product:hover{
   transform: scale(1.2);
@@ -122,7 +122,7 @@ transition: transform .2s;
   75%  {background-image: url(./images/nintendo-switch.jpg); left:80vw;}
   100% {background-image: url(./images/ps5.png); background-size: cover; left: 10vw; top:0px;}
 }
-@keyframes acsesories {
+@keyframes accessories {
   0%   {background-image: url(./images/controller-ps5.webp); background-size: cover; left: 10vw; top:0px;}
   25%  {background-image: url(./images/headphone.jpg); background-size: cover; left:80vw;}
   75%  {background-image: url(./images/PS4-HD-CAMERA.jpg); left:80vw;}
