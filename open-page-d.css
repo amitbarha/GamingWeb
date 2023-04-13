@@ -17,8 +17,9 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
+    width: 90vw;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
   }
   
   a:link, a:visited {
@@ -29,11 +30,17 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    transition: 0.5s;
   }
   
   a:hover, a:active {
     background-color: rgba(0, 6, 128, 0.34);
     color: white;
+    border-radius: 50%;
+    text-decoration: underline;
+  }
+  a:hover{
+    text-decoration: overline;
   }
   #link-index{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
