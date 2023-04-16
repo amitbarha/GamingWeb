@@ -21,7 +21,8 @@
     width: 90vw;
     margin-bottom: 1vw;
     margin-left: 2vw;
-    animation: slideIn 1s ease-in-out 
+    animation: slideIn 1s ease-in-out;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   a:link, a:visited {
